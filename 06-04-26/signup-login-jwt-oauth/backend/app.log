@@ -1,0 +1,14 @@
+2026-04-07 23:13:08,910 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\signup-login-jwt-oauth\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-04-07 23:16:33,634 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\signup-login-jwt-oauth\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-04-07 23:18:56,368 - INFO - User created: 24prathamesh2004@gmail.com
+2026-04-07 23:19:45,089 - INFO - User login: 24prathamesh2004@gmail.com
