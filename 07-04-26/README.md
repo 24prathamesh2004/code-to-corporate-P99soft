@@ -29,3 +29,29 @@ Git is a version control system used to track changes in code. Common commands i
 
 ## Postman
 Postman is a tool used to test APIs by sending HTTP requests and analyzing responses.
+
+---
+## Assignment - FastAPI CRUD with PostgreSQL
+![](snapshots/2.1.png)
+![](snapshots/2.2.png)
+
+##  Tech Stack
+- FastAPI
+- PostgreSQL
+- SQLAlchemy (ORM)
+- Pydantic (Validation)
+- Uvicorn (Server)
+
+---
+
+##  Features / Concepts Used
+- REST APIs (GET, POST, PUT, DELETE)
+- Path Parameters (`/users/{id}`)
+- Query Parameters (`?skip=0&limit=10`)
+- Request Body Validation (Pydantic)
+- Dependency Injection (`Depends`)
+- Database ORM (SQLAlchemy)
+- Environment Variables (`.env`)
+- Auto API Docs (Swagger UI)
+
+---
