@@ -41,3 +41,73 @@ Swagger provides automatically generated API documentation. It allows developers
 
 ## Exception Handling
 Exception handling is used to handle runtime errors using try and except blocks. In FastAPI, HTTPException is used to return proper error responses.
+
+---
+## Assignment - JWT OAuth2 Authentication System
+![](snapshots/1.2.png)
+![](snapshots/1.1.png)
+
+##  Features
+- User Signup & Login  
+- JWT Authentication  
+- Access Token (short expiry)  
+- Refresh Token (long expiry)  
+- Password Hashing (bcrypt / argon2)  
+- PostgreSQL Integration  
+- Logging system  
+- Simple Streamlit UI  
+
+---
+
+##  Concepts Used
+
+###  Authentication & Authorization
+- OAuth2 Password Flow (simplified)
+- Token-based authentication
+
+###  JWT (JSON Web Tokens)
+- **Access Token** → used for API access (expires quickly)
+- **Refresh Token** → used to generate new access tokens
+
+###  Password Security
+- Password hashing using bcrypt / argon2
+- No plain-text password storage
+
+###  Database
+- PostgreSQL database
+- SQLAlchemy ORM for DB operations
+
+###  Backend
+- FastAPI for REST APIs
+- Dependency Injection for DB sessions
+
+###  Frontend
+- Streamlit UI for user interaction
+- Displays API responses and tokens
+
+###  Logging
+- Logs user activities (signup, login)
+
+---
+
+##  How It Works
+
+1. **Signup**
+   - User enters email & password
+   - Password is hashed and stored in database
+
+2. **Login**
+   - Credentials are verified
+   - Generates:
+     - Access Token (15 minutes)
+     - Refresh Token (7 days)
+   - Refresh token stored in database
+
+3. **Access API**
+   - Access token is used to access protected endpoints
+
+4. **Refresh Token**
+   - When access token expires
+   - Refresh token is used to generate a new access token
+
+---
